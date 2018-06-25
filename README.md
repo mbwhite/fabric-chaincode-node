@@ -255,6 +255,7 @@ Now you need to restart the peer in "network" mode instead of "dev" mode:
 Install the chaincode. The peer CLI will package the node.js chaincode source, without the "node_modules" folder, and send to the peer to install. If you have previously installed a chaincode called by the same name and version, you can delete it from the peer by removing the file /var/hyperledger/production/chaincodes/<name>.<version>.
 ```
 CORE_LOGGING_PEER=debug ./build/bin/peer chaincode install -l node -n mycc -v v0 -p <path to chaincode folder>
+CORE_LOGGING_PEER=debug ./build/bin/peer chaincode install --lang node --name mycc --version v0 --path <path to chaincode folder>
 ```
 
 Upon successful response, instantiate the chaincode on the "test" channel created above:
