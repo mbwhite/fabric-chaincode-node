@@ -13,7 +13,7 @@
     "apis/fabric-contract-api/lib/contract.js": "77bc3fba6bc1a89b59273c6240cb03327fdea132",
     "apis/fabric-contract-api/lib/jsontransactionserializer.js": "9148bf9088485adf4c41b6aed254c58ccbfddce7",
     "apis/fabric-contract-api/lib/logger.js": "8b92ac903d0529d809cadf14bcd5a000c5e41ca5",
-    "apis/fabric-contract-api/package-deps.json": "056bd28d1b332a1e90d45b7f8b1190c0eb934d96",
+    "apis/fabric-contract-api/package-deps.json": "7f76139055984c229554e06a518482bb1bd910f7",
     "apis/fabric-contract-api/package.json": "a03d196990ba7f14c4bebaa375274001b4318f5d",
     "apis/fabric-contract-api/schema/contract-schema.json": "524312fd1f351bffeba8e556dcb9b3f7b36d4e70",
     "apis/fabric-contract-api/schema/data.json": "c8228d6ec022cc08f1d11234efa6b2af304b80e2",

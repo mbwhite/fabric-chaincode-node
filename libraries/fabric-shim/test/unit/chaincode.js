@@ -50,8 +50,11 @@ describe('Chaincode', () => {
 
     describe('Start()', () => {
 
-        beforeEach(() => {
+        before(() => {
             Chaincode = rewire(chaincodePath);
+        });
+
+        beforeEach(() => {
             Chaincode.__set__('yargs', {'argv': {'$0': 'fabric-chaincode-node'}});
         });
 

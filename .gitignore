@@ -30,3 +30,6 @@ common/temp/**
 .rush/temp/**
 **/*.build.error.log
 **/*.build.log
+
+# test results
+test-results.xml

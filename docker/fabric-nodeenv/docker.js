@@ -37,7 +37,7 @@ const imageBuild = async () => {
 // remove fabric-nodeenv images
 const imageClean = async () => {
     await runcmds([
-        util.format('docker rmi -f `docker images -q --filter=reference="hyperledger/fabric-nodeenv:%s*"` || echo ok', version)
+        util.format('docker rmi -f `docker images -q --filter=reference="hyperledger/fabric-nodeenv:%s*"` 2>&1 || true', version)
     ]);
 };
 

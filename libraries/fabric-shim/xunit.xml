@@ -1,0 +1,397 @@
+<testsuite name="Mocha Tests" tests="395" failures="0" errors="0" skipped="1" timestamp="Mon, 07 Oct 2019 11:23:34 GMT" time="3.366">
+<testcase classname="Chaincode Chaincode &#x27;spi&#x27; interface" name="should be able to call the init method" time="0"/>
+<testcase classname="Chaincode Chaincode &#x27;spi&#x27; interface" name="should be able to call the init method" time="0"/>
+<testcase classname="Chaincode Chaincode &#x27;spi&#x27; interface" name="should only have the Init and Invoke" time="0.003"/>
+<testcase classname="Chaincode Start()" name="should throw an error if no arguments passed" time="0.002"/>
+<testcase classname="Chaincode Start()" name="should throw an error if string argument passed" time="0.001"/>
+<testcase classname="Chaincode Start()" name="should throw an error if null argument passed" time="0"/>
+<testcase classname="Chaincode Start()" name="should throw an error if object missing init passed as argument" time="0.001"/>
+<testcase classname="Chaincode Start()" name="should throw an error if object missing invoke passed as argument" time="0"/>
+<testcase classname="Chaincode Start()" name="should start when passed init and invoke" time="0.008"/>
+<testcase classname="Chaincode Start()" name="should delete unnecessary arguments passed to the CLI before passing on" time="0.001"/>
+<testcase classname="Chaincode Start() TLS handling" name="should throw an error when CORE_TLS_CLIENT_KEY_PATH env var not set" time="0.001"/>
+<testcase classname="Chaincode Start() TLS handling" name="should throw an error when CORE_TLS_CLIENT_KEY_PATH env var set but CORE_TLS_CLIENT_CERT_PATH env var not set" time="0.001"/>
+<testcase classname="Chaincode Start() TLS handling" name="should call handler.chat() with the correct object and output a message" time="0.003"/>
+<testcase classname="Chaincode Start() TLS handling" name="should load the opts certificate attributes as JSON strings with the correct properties" time="0.002"/>
+<testcase classname="Chaincode parsePeerUrlFcn" name="should throw an error if peer.address not set" time="0.001"/>
+<testcase classname="Chaincode parsePeerUrlFcn" name="should throw an error if peer.address set to url" time="0.001"/>
+<testcase classname="Chaincode parsePeerUrlFcn" name="should use grpc when URL already has that prefix" time="0.001"/>
+<testcase classname="Chaincode parsePeerUrlFcn" name="should use grpcs when URL already has that prefix" time="0.001"/>
+<testcase classname="Chaincode parsePeerUrlFcn" name="should use grpc when CORE_PEER_TLS_ENABLED env var is not set" time="0"/>
+<testcase classname="Chaincode parsePeerUrlFcn" name="should use grpc when CORE_PEER_TLS_ENABLED env var is set to false" time="0"/>
+<testcase classname="Chaincode parsePeerUrlFcn" name="should use grpc when CORE_PEER_TLS_ENABLED env var is set to a string FALSE" time="0"/>
+<testcase classname="Chaincode parsePeerUrlFcn" name="should use grpcs when CORE_PEER_TLS_ENABLED env var is set to true" time="0.001"/>
+<testcase classname="Chaincode parsePeerUrlFcn" name="should use grpcs when CORE_PEER_TLS_ENABLED env var is set to a string TRUE" time="0.001"/>
+<testcase classname="Chaincode response" name="should let the code response an error" time="0"/>
+<testcase classname="Chaincode response" name="should handle an empty success" time="0.002"/>
+<testcase classname="Chaincode response" name="should handle a success with message" time="0"/>
+<testcase classname="Chaincode newLogger()" name="should use shim when calling getLogger and no name passed" time="0"/>
+<testcase classname="Chaincode newLogger()" name="should use shim when calling getLogger and name passed" time="0"/>
+<testcase classname="fabric-chaincode-node cli Main test" name="should setup yargs correctly" time="0.039"/>
+<testcase classname="fabric-chaincode-node cli Main test" name="should handle resolved promise  correctly" time="0.008"/>
+<testcase classname="fabric-chaincode-node cli Main test" name="should handle rejected promise  correctly" time="0.002"/>
+<testcase classname="Client-Identity" name="should throw an error when using a bad cert" time="0.001"/>
+<testcase classname="Client-Identity Certificate with values" name="should have correct mspId" time="0.001"/>
+<testcase classname="Client-Identity Certificate with values" name="should return correct ID bytes" time="0"/>
+<testcase classname="Client-Identity Certificate with values" name="should return correct value on getID()" time="0.001"/>
+<testcase classname="Client-Identity Certificate with values" name="should have correct attrs" time="0"/>
+<testcase classname="Client-Identity Certificate with values" name="should return the value when getAttributeValue() called with known attribute" time="0"/>
+<testcase classname="Client-Identity Certificate with values" name="should return null when getAttributeValue() called with unknown attribute" time="0.001"/>
+<testcase classname="Client-Identity Certificate with values" name="should return true when value provided matches known attribute in assertAttributeValue()" time="0"/>
+<testcase classname="Client-Identity Certificate with values" name="should return false when value provided does not match known attribute in assertAttributeValue()" time="0"/>
+<testcase classname="Client-Identity Certificate with values" name="should return false when unknown attribute in assertAttributeValue()" time="0"/>
+<testcase classname="Client-Identity Certificate with multiple attributes" name="should have correct attributes" time="0.001"/>
+<testcase classname="Client-Identity Certificate without values" name="should have correct mspId" time="0"/>
+<testcase classname="Client-Identity Certificate without values" name="should have not attributes" time="0.001"/>
+<testcase classname="Client-Identity Certificate with long DNs" name="should return correct value on getID()" time="0"/>
+<testcase classname="chaincode cmd" name="should configure the builder function" time="0.002"/>
+<testcase classname="chaincode cmd" name="should handle correctly" time="0.001"/>
+<testcase classname="chaincode cmd #getArgs" name="should return yargs when called via cli name" time="0.001"/>
+<testcase classname="chaincode cmd #getArgs" name="should use yargs parser on process.argv when not called with cli name" time="0.002"/>
+<testcase classname="chaincode cmd #getArgs" name="should throw an error if a required field is missing" time="0.001"/>
+<testcase classname="fabric-chaincode-node metadata cmd launcher cmd method tests" name="should have the correct command and description" time="0.001"/>
+<testcase classname="fabric-chaincode-node metadata cmd launcher cmd method tests" name="should call yargs correctly" time="0"/>
+<testcase classname="GenerateCommand #builder function" name="should have the correct command and description" time="0"/>
+<testcase classname="GenerateCommand #builder function" name="should call yargs correctly" time="0.001"/>
+<testcase classname="GenerateCommand #handler function" name="should call the handler function correctly" time="0"/>
+<testcase classname="generate #handler" name="should write the contract metadata to a json file when no file extension is specified" time="0.001"/>
+<testcase classname="generate #handler" name="should write the contract metadata to a json file when the .json file extension is specified" time="0.001"/>
+<testcase classname="generate #handler" name="should write the contract metadata to the specified file extension when a non .json extension is specified" time="0.001"/>
+<testcase classname="generate #handler" name="should log out the contract metadata to when no file-name arg is passed " time="0.001"/>
+<testcase classname="bootstrap.js #register" name="should pass on the register to the shim" time="0"/>
+<testcase classname="bootstrap.js #bootstrap" name="should correctly call the register method" time="0.001"/>
+<testcase classname="bootstrap.js #getInfoFromContract" name="should use the main class defined in the package.json" time="0.005"/>
+<testcase classname="bootstrap.js #getInfoFromContract" name="should use the main class defined in the package.json with a single element" time="0.001"/>
+<testcase classname="bootstrap.js #getInfoFromContract" name="should throw an error if there is no json.main" time="0.001"/>
+<testcase classname="bootstrap.js #getInfoFromContract" name="should use the main class defined with contracts exported, and custom serialization" time="0.001"/>
+<testcase classname="bootstrap.js #getInfoFromContract" name="should throw an error if there is no transaction property" time="0.002"/>
+<testcase classname="bootstrap.js #getMetadata" name="should handle when there are files available" time="0.005"/>
+<testcase classname="bootstrap.js #getMetadata" name="should handle when files not available" time="0.001"/>
+<testcase classname="bootstrap.js #loadAndValidateMetadata" name="validate and return the metadata" time="0.062"/>
+<testcase classname="bootstrap.js #loadAndValidateMetadata" name="fail to validate and throw an error" time="0.002"/>
+<testcase classname="bootstrap.js #loadAndValidateMetadata" name="Correct schema path is pointed to in the validate method" time="0"><skipped/></testcase>
+<testcase classname="bootstrap.js #loadAndValidateMetadata" name="Should correct validate a schema" time="0.019"/>
+<testcase classname="chaincodefromcontract #constructor" name="should handle no classes being passed in" time="0"/>
+<testcase classname="chaincodefromcontract #constructor" name="should handle missing serialization information" time="0"/>
+<testcase classname="chaincodefromcontract #constructor" name="should handle a single class being passed as a contract" time="0.002"/>
+<testcase classname="chaincodefromcontract #constructor" name="should handle a case where the metadata is incompatible with code" time="0.001"/>
+<testcase classname="chaincodefromcontract #_compileSchemas" name="should handle no complex objects being available" time="0.002"/>
+<testcase classname="chaincodefromcontract #_compileSchemas" name="should handle complex objects being available" time="0.002"/>
+<testcase classname="chaincodefromcontract #_resolveContractImplementations" name="should handle a single class being passed as a contract" time="0.002"/>
+<testcase classname="chaincodefromcontract #_resolveContractImplementations" name="should handle a single class being passed that is not valid" time="0.001"/>
+<testcase classname="chaincodefromcontract #_resolveContractImplementations" name="should handle a two classes being passed as a contract" time="0.001"/>
+<testcase classname="chaincodefromcontract #_resolveContractImplementations" name="should handle the default tag being used" time="0.002"/>
+<testcase classname="chaincodefromcontract #init" name="should handle a single class being passed as a contract" time="0.003"/>
+<testcase classname="chaincodefromcontract #init" name="should handle a single class being passed as a contract" time="0.002"/>
+<testcase classname="chaincodefromcontract #invoke" name="should handle a single class being passed as a contract" time="0.002"/>
+<testcase classname="chaincodefromcontract #invoke" name="should pass the logging object to contracts" time="0.016"/>
+<testcase classname="chaincodefromcontract #_splitFunctionName" name="should handle the usual case of ns:fn" time="0"/>
+<testcase classname="chaincodefromcontract #_splitFunctionName" name="should handle the case of no contractName explicit" time="0.001"/>
+<testcase classname="chaincodefromcontract #_splitFunctionName" name="should handle the case of no contractName implict" time="0.001"/>
+<testcase classname="chaincodefromcontract #_splitFunctionName" name="should handle the case of no input" time="0"/>
+<testcase classname="chaincodefromcontract #_splitFunctionName" name="should handle the case of multiple :" time="0.001"/>
+<testcase classname="chaincodefromcontract #invokeFunctionality" name="should handle missing function" time="0.002"/>
+<testcase classname="chaincodefromcontract #invokeFunctionality" name="should handle valid contract name, but missing function" time="0.005"/>
+<testcase classname="chaincodefromcontract #invokeFunctionality" name="should handle valid contract name, but missing function and throws error" time="0.007"/>
+<testcase classname="chaincodefromcontract #invokeFunctionality" name="should handle valid contract name, with valid function" time="0.008"/>
+<testcase classname="chaincodefromcontract #invokeFunctionality" name="should handle functions with returned values schema" time="0.008"/>
+<testcase classname="chaincodefromcontract #_checkAgainstSuppliedMetadata" name="should return empty array when no issue" time="0.001"/>
+<testcase classname="chaincodefromcontract #_checkAgainstSuppliedMetadata" name="should return empty array when metadata has no field contracts" time="0.001"/>
+<testcase classname="chaincodefromcontract #_checkAgainstSuppliedMetadata" name="should return empty array when missing a contract" time="0.001"/>
+<testcase classname="chaincodefromcontract #_processContractInfo" name="should be able to handle no annotations suppled" time="0.002"/>
+<testcase classname="chaincodefromcontract #_processContractInfo" name="should be able to handle no annotations suppled" time="0.002"/>
+<testcase classname="chaincodefromcontract #_processContractTransactions" name="should handle no transaction annotations used, ignoring functions that match in name to ignore array" time="0.001"/>
+<testcase classname="chaincodefromcontract #_processContractTransactions" name="should handle no transaction annotations used, ignoring functions that start with _" time="0.001"/>
+<testcase classname="chaincodefromcontract #_processContractTransactions" name="should not add submitTx to the system contract functions" time="0.001"/>
+<testcase classname="chaincodefromcontract #_processContractTransactions" name="should handle transaction annotations being used" time="0.001"/>
+<testcase classname="chaincodefromcontract #_processContractTransactions" name="should handle transactions with no arguments" time="0"/>
+<testcase classname="chaincodefromcontract #_augmentMetadataFromCode" name="should not add extra detail for metadata, info and components when metadata supplied with those fields" time="0"/>
+<testcase classname="chaincodefromcontract #_augmentMetadataFromCode" name="should use passed info" time="0.001"/>
+<testcase classname="chaincodefromcontract #_augmentMetadataFromCode" name="should handle contracts and remove underscore lead properties of contractInstance" time="0.001"/>
+<testcase classname="chaincodefromcontract #_augmentMetadataFromCode" name="should correctly retrieve info with the constructor title and version data" time="0.001"/>
+<testcase classname="chaincodefromcontract #_augmentMetadataFromCode" name="should fill in info when there is no constructor title and version data" time="0.001"/>
+<testcase classname="chaincodefromcontract #_augmentMetadataFromCode" name="should fill in components field when not set" time="0.001"/>
+<testcase classname="chaincodefromcontract #_augmentMetadataFromCode" name="should fill in components field when not set and reflect fails" time="0.001"/>
+<testcase classname="chaincodefromcontract #_augmentMetadataFromCode" name="should fill in schema when not set" time="0.002"/>
+<testcase classname="chaincodefromcontract #helper constructors" name="should create the DataMarshall" time="0"/>
+<testcase classname="datamarshall.js #constructor" name="should create plain object ok" time="0.02"/>
+<testcase classname="datamarshall.js #constructor" name="should create plain object ok" time="0.007"/>
+<testcase classname="datamarshall.js #toWireBuffer" name="should jsonSerialized buffering" time="0.002"/>
+<testcase classname="datamarshall.js #toWireBuffer" name="should handle no schema passed" time="0.001"/>
+<testcase classname="datamarshall.js #fromWireBuffer" name="should return the same data as the serializer from buffer" time="0.002"/>
+<testcase classname="datamarshall.js #fromWireBuffer" name="should handle no validationData" time="0.002"/>
+<testcase classname="datamarshall.js #fromWireBuffer" name="should handle no schema" time="0.002"/>
+<testcase classname="datamarshall.js #handleParameters" name="should handle function with no parameters and none passed" time="0"/>
+<testcase classname="datamarshall.js #handleParameters" name="should handle function with no parameters but some passed" time="0"/>
+<testcase classname="datamarshall.js #handleParameters" name="should handle different length lists" time="0"/>
+<testcase classname="datamarshall.js #handleParameters" name="should handle error when schema has not useful fields" time="0"/>
+<testcase classname="datamarshall.js #handleParameters" name="should handle error when type invalid" time="0.002"/>
+<testcase classname="datamarshall.js #handleParameters" name="should handle when type invalid for $ref" time="0.003"/>
+<testcase classname="datamarshall.js #handleParameters" name="should push valid values to returned array for primitve types" time="0.005"/>
+<testcase classname="SystemContract #constructor" name="should create correctly" time="0.001"/>
+<testcase classname="SystemContract #GetMetadata" name="should get the buffer" time="0.001"/>
+<testcase classname="Handler QMsg" name="should set its variables with values passed in the constructor" time="0"/>
+<testcase classname="Handler QMsg getMsg" name="should return the value of msg" time="0"/>
+<testcase classname="Handler QMsg getMsgTxContextId" name="should return the value of msg.channel_id concatenated with msg.txid" time="0"/>
+<testcase classname="Handler QMsg getMethod" name="should return the value of method" time="0.001"/>
+<testcase classname="Handler QMsg success" name="should call the resolve function" time="0.001"/>
+<testcase classname="Handler QMsg fail" name="should call the reject function" time="0.001"/>
+<testcase classname="Handler MsgQueueHandler" name="should setup its variables on construction" time="0.001"/>
+<testcase classname="Handler MsgQueueHandler queueMsg" name="should add message to the queue and call sendMsg and handle when txContentId not in txQueues" time="0"/>
+<testcase classname="Handler MsgQueueHandler queueMsg" name="should add message to the queue and not call call sendMsg when txContentId in txQueues and is empty array" time="0"/>
+<testcase classname="Handler MsgQueueHandler queueMsg" name="should add message to the queue and not call call sendMsg when txContentId in txQueues and already has value in array" time="0"/>
+<testcase classname="Handler MsgQueueHandler handleMsgResponse" name="should do nothing if qMsg does not exist for txContextId" time="0.001"/>
+<testcase classname="Handler MsgQueueHandler handleMsgResponse" name="should call qMsg success when parseResponse does not throw an error _removeCurrentAndSendNextMsg" time="0.001"/>
+<testcase classname="Handler MsgQueueHandler handleMsgResponse" name="should call qMsg fail when parseResponse does throw an error _removeCurrentAndSendNextMsg" time="0.001"/>
+<testcase classname="Handler MsgQueueHandler _getCurrentMsg" name="should get the message at the top of the queue for a txContextId" time="0"/>
+<testcase classname="Handler MsgQueueHandler _getCurrentMsg" name="should return undefined when queue is empty for a txContextId" time="0"/>
+<testcase classname="Handler MsgQueueHandler _getCurrentMsg" name="should return undefined when queue does not exist for a txContextId" time="0"/>
+<testcase classname="Handler MsgQueueHandler _removeCurrentAndSendNextMsg" name="should delete the current message and send the next for a txContentId" time="0"/>
+<testcase classname="Handler MsgQueueHandler _removeCurrentAndSendNextMsg" name="should delete the queue if no messages left after current is deleted for a txContentId" time="0"/>
+<testcase classname="Handler MsgQueueHandler _removeCurrentAndSendNextMsg" name="should do nothing if no queue is found for a txContentId" time="0"/>
+<testcase classname="Handler MsgQueueHandler _sendMsg" name="should do nothing if no QMsg found for a txContextId" time="0.001"/>
+<testcase classname="Handler MsgQueueHandler _sendMsg" name="should write to the stream the current message" time="0.001"/>
+<testcase classname="Handler MsgQueueHandler _sendMsg" name="should call fail on the QMsg if stream write errors" time="0.002"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should throw an error when chaincode not passed" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should throw an error if argument does not match chaincode format" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should throw an error if argument only part matches chaincode format" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should throw an error if argument missing URL argument" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should throw an error if URL argument does not use grpc as protocol" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should set endpoint, client and default timeout" time="0.007"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should override the default request timeout if value passed" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should store additional grpc options" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should preserve casing in handler addr" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should throw an error if connection secure and certificate not passed" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should throw an error if connection secure encoded private key not passed as opt" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should throw an error if connection secure encoded private key not passed as opt" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should set endpoint, client and default timeout for a secure connection" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient" name="should set grpc ssl options when ssl-target-name-override passed" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient close" name="should call end on the stream" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient chat" name="should create instance of MsgQueueHandler, register the client, setup listeners and write" time="0.005"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.data" name="should throw error when in state created and MSG_TYPE not REGISTERED" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.data" name="should throw error when in state established and MSG_TYPE not READY" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.data" name="should do nothing when in state ready and MSG_TYPE equals REGISTERED" time="0"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.data" name="should do nothing when in state ready and MSG_TYPE equals READY" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.data" name="should call handleMsgResponse when in state ready and MSG_TYPE equals RESPONSE" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.data" name="should call handleMsgResponse when in state ready and MSG_TYPE equals ERROR" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.data" name="should call handleInit when in state ready and MSG_TYPE equals INIT" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.data" name="should call handleTransaction when in state ready and MSG_TYPE equals TRANSACTION" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.data" name="should end the process with value 1" time="0.002"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.end" name="should cancel the stream" time="0.002"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.error" name="should end the stream" time="0.002"/>
+<testcase classname="Handler ChaincodeSupportClient chat stream.on.error" name="should end the  with error" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleInit" name="should call handleMessage" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleTransaction" name="should call handleMessage" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetState" name="should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetState" name="should reject when _askPeerAndListen resolves" time="0.003"/>
+<testcase classname="Handler ChaincodeSupportClient handlePutState" name="should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handlePutState" name="should reject when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleDeleteState" name="should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleDeleteState" name="should reject when _askPeerAndListen rejects" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handlePutStateMetadata" name="should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handlePutStateMetadata" name="should reject when _askPeerAndListen rejects" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetPrivateDataHash" name="should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetPrivateDataHash" name="should reject when _askPeerAndListen rejects" time="0.002"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetStateMetadata" name="should resolve when _askPeerAndListen resolves" time="0.002"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetStateMetadata" name="should reject when _askPeerAndListen rejects" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetStateByRange" name="should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetStateByRange" name="should reject when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetStateByRange" name="should resolve with metadata when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleQueryStateNext" name="should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleQueryStateNext" name="should reject when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleQueryStateClose" name="should resolve when _askPeerAndListen resolves" time="0.004"/>
+<testcase classname="Handler ChaincodeSupportClient handleQueryStateClose" name="should reject when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetQueryResult" name="should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetQueryResult" name="should reject when _askPeerAndListen rejects" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetQueryResult" name="handleGetQueryResult with metadata should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetHistoryForKey" name="should resolve when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleGetHistoryForKey" name="should reject when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleInvokeChaincode" name="should return decoded response when chaincode message type COMPLETED" time="0.002"/>
+<testcase classname="Handler ChaincodeSupportClient handleInvokeChaincode" name="should throw an error when _askPeerAndListen resolves with an error" time="0.002"/>
+<testcase classname="Handler ChaincodeSupportClient handleInvokeChaincode" name="should reject when _askPeerAndListen resolves" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient handleInvokeChaincode" name="should return nothing chaincode message type not COMPLETED or ERROR" time="0.002"/>
+<testcase classname="Handler ChaincodeSupportClient _askPeerAndListen" name="should return a new promise with value of queueMsg result" time="0.001"/>
+<testcase classname="Handler ChaincodeSupportClient toString" name="should return ChaincodeSupportClient object as a string with the URL" time="0"/>
+<testcase classname="Handler handleMessage Error" name="should handle an error decoding the payload" time="0.002"/>
+<testcase classname="Handler handleMessage Error" name="should handle error creating a chaincode stub" time="0.001"/>
+<testcase classname="Handler handleMessage Error" name="should handle chaincode.Init returning nothing" time="0.002"/>
+<testcase classname="Handler handleMessage Error" name="should handle chaincode.Invoke returning nothing" time="0.001"/>
+<testcase classname="Handler handleMessage Error" name="should handle chaincode.Init returning no status" time="0.001"/>
+<testcase classname="Handler handleMessage Error" name="should handle chaincode.Invoke returning no status" time="0.001"/>
+<testcase classname="Handler handleMessage Complete" name="should write a COMPLETE message when successful init" time="0.001"/>
+<testcase classname="Handler handleMessage Complete" name="should write a COMPLETE message when successful invoke" time="0.002"/>
+<testcase classname="Handler createStub" name="should return a new instance of Stub" time="0.012"/>
+<testcase classname="Handler newErrorMsg" name="should return an object for the error message" time="0.001"/>
+<testcase classname="Handler handleGetStateMetadata" name="should success" time="0.002"/>
+<testcase classname="Handler parseResponse" name="should throw an error when type not MSG_TYPE RESPONSE or ERROR" time="0.001"/>
+<testcase classname="Handler parseResponse" name="should throw an error when type MSG_TYPE ERROR" time="0"/>
+<testcase classname="Handler parseResponse" name="should return the payload when using an unknown method" time="0"/>
+<testcase classname="Handler parseResponse" name="should return the payload when using GetState for method" time="0"/>
+<testcase classname="Handler parseResponse" name="should return the payload when using PutState for method" time="0"/>
+<testcase classname="Handler parseResponse" name="should return QueryResponse.decoded payload for QueryStateClose" time="0"/>
+<testcase classname="Handler parseResponse" name="should return QueryResponse.decoded payload for QueryStateNext" time="0"/>
+<testcase classname="Handler parseResponse" name="should return ChaincodeMessage.decoded payload for InvokeChaincode" time="0.001"/>
+<testcase classname="Handler parseResponse" name="should return a StateQueryIterator for GetStateByRange" time="0.002"/>
+<testcase classname="Handler parseResponse" name="should decode metadata" time="0.002"/>
+<testcase classname="Handler parseResponse" name="should return a StateQueryIterator for GetQueryResult" time="0.002"/>
+<testcase classname="Handler parseResponse" name="should return a HistoryQueryIterator for GetHistoryForKey" time="0.001"/>
+<testcase classname="Handler parseResponse" name="shold decode state metadata for GetStateMetadata" time="0"/>
+<testcase classname="Iterator CommonIterator" name="should set the variables using the arguments in the constructor" time="0.001"/>
+<testcase classname="Iterator CommonIterator close" name="should return handler.handleQueryStateClose" time="0.001"/>
+<testcase classname="Iterator CommonIterator _getResultFromBytes" name="should return KV decode on resultbytes for a QUERY type" time="0"/>
+<testcase classname="Iterator CommonIterator _getResultFromBytes" name="should return KeyModification decode on resultbytes for a HISTORY type" time="0"/>
+<testcase classname="Iterator CommonIterator _getResultFromBytes" name="should throw an error for unknown types" time="0"/>
+<testcase classname="Iterator CommonIterator _createAndEmitResult" name="should return value of first element of results converted from bytes and done false when has_more false and results has no more elements after currentLoc" time="0"/>
+<testcase classname="Iterator CommonIterator _createAndEmitResult" name="should return value of first element of results converted from bytes and done false when has_more true and results has no more elements after currentLoc" time="0"/>
+<testcase classname="Iterator CommonIterator _createAndEmitResult" name="should return value of first element of results converted from bytes and done false when has_more false and results has elements after currentLoc" time="0.001"/>
+<testcase classname="Iterator CommonIterator _createAndEmitResult" name="should return value of first element of results converted from bytes and done false when has_more true and results has elements after currentLoc" time="0"/>
+<testcase classname="Iterator CommonIterator _createAndEmitResult" name="should return as expected with non-zero currentLoc" time="0"/>
+<testcase classname="Iterator CommonIterator _createAndEmitResult" name="should return value of first element of results converted from bytes and done false" time="0.001"/>
+<testcase classname="Iterator CommonIterator next" name="should return _createAndEmitResult when there are elements left in the result set" time="0"/>
+<testcase classname="Iterator CommonIterator next" name="should return _createAndEmitResult when response has_more and no error occurs" time="0.001"/>
+<testcase classname="Iterator CommonIterator next" name="should throw an error if error occurs when has_more and listenerCount for data = 0" time="0.001"/>
+<testcase classname="Iterator CommonIterator next" name="should return done if response does not has_more and listenerCount for end &#x3E; 0" time="0"/>
+<testcase classname="Iterator CommonIterator next" name="should return done if response does not has_more and listenerCount for end = 0" time="0"/>
+<testcase classname="Iterator StateQueryIterator" name="should extend CommonIterator using QUERY for type" time="0"/>
+<testcase classname="Iterator HistoryQueryIterator" name="should extend CommonIterator using HISTORY for type" time="0"/>
+<testcase classname="Logger" name="coverage" time="0"/>
+<testcase classname="Logger getLogger" name="should create a new logger name unknown" time="0.001"/>
+<testcase classname="Logger getLogger" name="should return existing logger if known name used" time="0.001"/>
+<testcase classname="Logger getLogger" name="should set the log level to fatal when env var set to CRITICAL" time="0.001"/>
+<testcase classname="Logger getLogger" name="should set the log level to error when env var set to ERROR" time="0"/>
+<testcase classname="Logger getLogger" name="should set the log level to warn when env var set to WARNING" time="0"/>
+<testcase classname="Logger getLogger" name="should set the log level to debug when env var set to DEBUG" time="0.001"/>
+<testcase classname="Logger setLevel" name="should update the loggers to be the level passed in" time="0.001"/>
+<testcase classname="Logger formatter" name="anonymous logger" time="0.001"/>
+<testcase classname="Logger formatter" name="named logger" time="0.001"/>
+<testcase classname="Exports" name="should export the start function" time="0"/>
+<testcase classname="Exports" name="should export the success function" time="0"/>
+<testcase classname="Exports" name="should export the error function" time="0"/>
+<testcase classname="Exports" name="should export the Shim class" time="0"/>
+<testcase classname="Exports" name="should export the Stub class" time="0"/>
+<testcase classname="Exports" name="should export the ChaincodeInterface class" time="0"/>
+<testcase classname="Exports" name="should export the ClientIdentity class" time="0.001"/>
+<testcase classname="Exports" name="should export the Iterators.HistoryQueryIterator class" time="0"/>
+<testcase classname="Exports" name="should export the HistoryQueryIterator class" time="0"/>
+<testcase classname="Exports" name="should export the Iterators.StateQueryIterator class" time="0"/>
+<testcase classname="Exports" name="should export the StateQueryIterator class" time="0"/>
+<testcase classname="Stub validateCompositeKeyAttribute" name="should throw an error if no attribute passed" time="0.003"/>
+<testcase classname="Stub validateCompositeKeyAttribute" name="should throw an error if attribute not string" time="0.001"/>
+<testcase classname="Stub validateCompositeKeyAttribute" name="should throw an error if attribute empty string" time="0"/>
+<testcase classname="Stub computeProposalBinding" name="should return hash of decodedSP" time="0.001"/>
+<testcase classname="Stub convertToAsyncIterator" name="should inject a function into the promise that returns an object with the correct methods" time="0.001"/>
+<testcase classname="Stub convertToAsyncIterator" name="should be possible to iterate using async for of" time="0"/>
+<testcase classname="Stub convertToAsyncIterator" name="should close the iterator if we break out of the loop" time="0"/>
+<testcase classname="Stub convertToAsyncIterator" name="should close the iterator if we break out of the loop straight away" time="0"/>
+<testcase classname="Stub convertToAsyncIterator" name="should close the iterator if we throw out of the loop" time="0"/>
+<testcase classname="Stub convertToAsyncIterator" name="should work with a promise that returns an object with an iterator property deconstructed by the caller" time="0"/>
+<testcase classname="Stub convertToAsyncIterator" name="should work with a promise that returns an object with an iterator property not deconstructed by caller" time="0"/>
+<testcase classname="Stub convertToAsyncIterator" name="should handle a promise rejection" time="0"/>
+<testcase classname="Stub ChaincodeStub" name="should set up the vars and do nothing more with no signed proposal" time="0.001"/>
+<testcase classname="Stub ChaincodeStub" name="should throw an error for an invalid proposal" time="0.001"/>
+<testcase classname="Stub ChaincodeStub" name="should throw an error for a proposal with an empty header" time="0.001"/>
+<testcase classname="Stub ChaincodeStub" name="should throw an error for a proposal with an empty payload" time="0.001"/>
+<testcase classname="Stub ChaincodeStub" name="should throw an error for a proposal with an invalid header" time="0"/>
+<testcase classname="Stub ChaincodeStub" name="should throw an error for a proposal with an invalid signature header" time="0"/>
+<testcase classname="Stub ChaincodeStub" name="should throw an error for a proposal with an invalid creator" time="0.001"/>
+<testcase classname="Stub ChaincodeStub" name="should throw an error for a proposal with an invalid channelHeader" time="0.001"/>
+<testcase classname="Stub ChaincodeStub" name="should throw an error for a proposal with an invalid payload" time="0.001"/>
+<testcase classname="Stub ChaincodeStub" name="should set all the env vars with a valid signed proposal" time="0.003"/>
+<testcase classname="Stub ChaincodeStub getArgs" name="should return the args" time="0"/>
+<testcase classname="Stub ChaincodeStub getStringArgs" name="should return the args" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getBufferArgs" name="should return the args" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getFunctionAndParameters" name="should return the function name parameters" time="0"/>
+<testcase classname="Stub ChaincodeStub getFunctionAndParameters" name="should return string for function and empty array as param if only one arg" time="0"/>
+<testcase classname="Stub ChaincodeStub getFunctionAndParameters" name="should return empty string for function and empty array for params if no args" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getTxID" name="should return txId" time="0"/>
+<testcase classname="Stub ChaincodeStub getChannelID" name="should return channel_id" time="0"/>
+<testcase classname="Stub ChaincodeStub getCreator" name="should return creator" time="0"/>
+<testcase classname="Stub ChaincodeStub getTransient" name="should return transient map" time="0"/>
+<testcase classname="Stub ChaincodeStub getSignedProposal" name="should return signed proposal" time="0"/>
+<testcase classname="Stub ChaincodeStub getTxTimestamp" name="should return transaction timestamp" time="0"/>
+<testcase classname="Stub ChaincodeStub getBinding" name="should return binding" time="0"/>
+<testcase classname="Stub ChaincodeStub getState" name="should return handler.handleGetState" time="0"/>
+<testcase classname="Stub ChaincodeStub putState" name="should return handler.handlePutState" time="0.001"/>
+<testcase classname="Stub ChaincodeStub putState" name="should return handler.handlePutState" time="0.001"/>
+<testcase classname="Stub ChaincodeStub deleteState" name="should return handler.handleDeleteState" time="0.001"/>
+<testcase classname="Stub ChaincodeStub setStateValidationParameter" name="should return handler.handlePutStateMetadata" time="0"/>
+<testcase classname="Stub ChaincodeStub getStateValidationParameter" name="should return handler.handleGetStateMetadata" time="0"/>
+<testcase classname="Stub ChaincodeStub getStateByRange" name="should return handler.handleGetStateByRange" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getStateByRange" name="should return handler.handleGetStateByRange using empty key substitute" time="0"/>
+<testcase classname="Stub ChaincodeStub getStateByRange" name="should throw error if using compositekey" time="0"/>
+<testcase classname="Stub ChaincodeStub getStateByRangeWithPagination" name="should throw error if using compositekey" time="0"/>
+<testcase classname="Stub ChaincodeStub getStateByRangeWithPagination" name="should have default startKey eqls EMPTY_KEY_SUBSTITUTE" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getStateByRangeWithPagination" name="should have default bookmark eqls an empty string" time="0"/>
+<testcase classname="Stub ChaincodeStub getStateByRangeWithPagination" name="should have default bookmark eqls an empty string" time="0"/>
+<testcase classname="Stub ChaincodeStub getQueryResult" name="should return handler.handleGetQueryResult" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getQueryResultWithPagination" name="should have default bookmark equals an empty string" time="0"/>
+<testcase classname="Stub ChaincodeStub getQueryResultWithPagination" name="should have default bookmark equals an empty string" time="0"/>
+<testcase classname="Stub ChaincodeStub getHistoryForKey" name="should return handler.handleGetHistoryForKey" time="0.001"/>
+<testcase classname="Stub ChaincodeStub invokeChaincode" name="should return handler.handleInvokeChaincode" time="0"/>
+<testcase classname="Stub ChaincodeStub invokeChaincode" name="should return handler.handleInvokeChaincode handling no channel passed" time="0"/>
+<testcase classname="Stub ChaincodeStub setEvent" name="should throw an error when name is not a string" time="0.001"/>
+<testcase classname="Stub ChaincodeStub setEvent" name="should throw an error when name is empty string" time="0"/>
+<testcase classname="Stub ChaincodeStub setEvent" name="should set an event" time="0"/>
+<testcase classname="Stub ChaincodeStub createCompositeKey" name="should throw an error if attributes is not an array" time="0"/>
+<testcase classname="Stub ChaincodeStub createCompositeKey" name="should return a composite key" time="0"/>
+<testcase classname="Stub ChaincodeStub splitCompositeKey" name="should return object with empty values when no composite key" time="0"/>
+<testcase classname="Stub ChaincodeStub splitCompositeKey" name="should return object with empty values when composite key only has one character" time="0"/>
+<testcase classname="Stub ChaincodeStub splitCompositeKey" name="should return object with empty values when composite key does not have first character as COMPOSITEKEY_NS" time="0"/>
+<testcase classname="Stub ChaincodeStub splitCompositeKey" name="should return object with objectType set but no attributes" time="0"/>
+<testcase classname="Stub ChaincodeStub splitCompositeKey" name="should return object with objectType set and array of attributes" time="0"/>
+<testcase classname="Stub ChaincodeStub getStateByPartialCompositeKey" name="should return handler.handleGetStateByRange using composite key" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getStateByPartialCompositeKeyWithPagination" name="the default bookmark should equal an empty string" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getStateByPartialCompositeKeyWithPagination" name="should return getStateByRangeWithPagination with bookmark and pageSize" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getPrivateData" name="should throw an error if no arguments supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateData" name="should throw an error if one argument supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateData" name="should throw an error if collection null" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateData" name="should return handler.handleGetState" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataHash" name="should throw an error if no arguments supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataHash" name="should throw an error if one argument supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataHash" name="should throw an error if collection null" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataHash" name="should return handler.handleGetPrivateDataHash" time="0.001"/>
+<testcase classname="Stub ChaincodeStub putPrivateData" name="should throw an error if no arguments supplied" time="0.001"/>
+<testcase classname="Stub ChaincodeStub putPrivateData" name="should throw an error if one argument supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub putPrivateData" name="should throw an error if two arguments supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub putPrivateData" name="should throw an error if collection null" time="0.001"/>
+<testcase classname="Stub ChaincodeStub putPrivateData" name="should throw an error if key null" time="0"/>
+<testcase classname="Stub ChaincodeStub putPrivateData" name="should return handler.handlePutState with string" time="0"/>
+<testcase classname="Stub ChaincodeStub putPrivateData" name="should return handler.handlePutState with object" time="0"/>
+<testcase classname="Stub ChaincodeStub deletePrivateData" name="should throw an error if no arguments supplied" time="0.001"/>
+<testcase classname="Stub ChaincodeStub deletePrivateData" name="should throw an error if one argument supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub deletePrivateData" name="should throw an error if collection null" time="0"/>
+<testcase classname="Stub ChaincodeStub deletePrivateData" name="should return handler.handleDeleteState" time="0"/>
+<testcase classname="Stub ChaincodeStub setPrivateDataValidationParameter" name="should return handler.handlePutStateMetadata" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataValidationParameter" name="should return handler.handleGetStateMetadata" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByRange" name="should throw an error if no arguments supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByRange" name="should throw an error if one argument supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByRange" name="should throw an error if two arguments supplied" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByRange" name="should throw an error if collection null" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByRange" name="should use a substitute start key if none provided" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByRange" name="should return handler.handleGetStateByRange" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByPartialCompositeKey" name="should throw an error if no arguments supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByPartialCompositeKey" name="should throw an error if one argument supplied" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByPartialCompositeKey" name="should throw an error if two arguments supplied" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByPartialCompositeKey" name="should throw an error if collection null" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataByPartialCompositeKey" name="should return stub.getPrivateDataByRange" time="0.001"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataQueryResult" name="should throw an error if no arguments supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataQueryResult" name="should throw an error if one argument supplied" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataQueryResult" name="should throw an error if collection null" time="0"/>
+<testcase classname="Stub ChaincodeStub getPrivateDataQueryResult" name="should return handler.handleGetQueryResult" time="0"/>
+<testcase classname="KeyEndorsementPolicy #constructor" name="should success for no policy" time="0"/>
+<testcase classname="KeyEndorsementPolicy #constructor" name="should decode policy" time="0.002"/>
+<testcase classname="KeyEndorsementPolicy #addOrgs" name="should throw error if role is not supported" time="0"/>
+<testcase classname="KeyEndorsementPolicy #addOrgs" name="should throw error if role is missing" time="0"/>
+<testcase classname="KeyEndorsementPolicy #addOrgs" name="should success add multiple orgs" time="0"/>
+<testcase classname="KeyEndorsementPolicy #addOrgs" name="should success add one org" time="0"/>
+<testcase classname="KeyEndorsementPolicy #addOrgs" name="should success add one peer org" time="0.001"/>
+<testcase classname="KeyEndorsementPolicy #addOrgs" name="should not throw error if no orgs" time="0"/>
+<testcase classname="KeyEndorsementPolicy #_getPolicyFromMspId" name="should successfully get policy from mspIds" time="0"/>
+<testcase classname="KeyEndorsementPolicy #_setMspIdsFromSPE" name="should successfully set mspIds from spe" time="0"/>
+<testcase classname="KeyEndorsementPolicy #delOrgs" name="should successfully delete one org" time="0.001"/>
+<testcase classname="KeyEndorsementPolicy #delOrgs" name="should successfully delete multiple orgs" time="0"/>
+<testcase classname="KeyEndorsementPolicy #getPolicy" name="should successfully get policy" time="0"/>
+<testcase classname="utils generateLoggingPrefix" name="should shorten txids over 8 letters" time="0"/>
+<testcase classname="utils generateLoggingPrefix" name="should leave txids shorter than 8 as was" time="0"/>
+<testcase classname="utils generateLoggingPrefix" name="should leave txids exactly 8 letters as was" time="0"/>
+</testsuite>

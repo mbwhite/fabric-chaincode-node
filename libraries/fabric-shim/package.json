@@ -10,14 +10,14 @@
   "scripts": {
     "start": "./startup.sh",
     "compile": "tsc --project test/typescript",
-    "test": "nyc mocha --recursive 'test/unit/**/*.js'",
+    "test": "nyc mocha --recursive 'test/unit/**/*.js' --reporter mocha-multi-reporters --reporter-options configFile=config.json",
     "update:clean": "rimraf bundle.js bundle.d.ts protos && mkdirp protos",
     "update:copy": "cpx \"${GOPATH}/src/github.com/hyperledger/fabric-protos/**/*.proto\" protos --verbose",
     "update:pbjs": "pbjs -t static-module -p google-protos -p protos $(find google-protos protos -name \"*.proto\" -type f) -o bundle.js",
     "update:pbts": "pbts -o bundle.d.ts bundle.js",
     "update": "npm run update:clean && npm run update:copy && npm run update:pbjs && npm run update:pbts",
     "lint":"eslint ./lib",
-    "build": "npm run lint & npm test"
+    "build": "npm run lint & npm test 2>&1"
   },
   "repository": {
     "type": "git",
@@ -62,7 +62,8 @@
     "chai-things": "^0.2.0",
     "rewire": "~4.0.1",
     "eslint": "4.0.0",
-    "mockery": "^2.1.0"
+    "mockery": "^2.1.0",
+    "mocha-multi-reporters": "^1.1.7"
   },
   "nyc": {
     "exclude": [
