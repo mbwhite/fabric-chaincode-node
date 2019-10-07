@@ -1,12 +1,15 @@
 {
-  "name": "fabric-shim-api",
-  "version": "2.0.0-snapshot",
+  "name": "@ampretia/fabric-shim-api",
+  "version": "2.0.1-4",
   "tag": "unstable",
   "description": "A node.js API of Hyperledger Fabric chaincode shim, to allow endorsing peers and user-provided chaincodes to communicate with each other",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyperledger/fabric-chaincode-node"
+    "url": "https://github.com/ampretia/fabric-chaincode-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "echo No Build needed"

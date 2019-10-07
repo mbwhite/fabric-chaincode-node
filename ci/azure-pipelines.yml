@@ -4,6 +4,7 @@
 # 
 # fabric-chaincode-node azure pipeline configuration.
 # 
+name: RELEASE-$(Date:yyyyMMdd)$(Rev:.rrr)
 
 trigger:
   branches:
@@ -46,15 +47,20 @@ stages:
                 node common/scripts/install-run-rush.js rebuild
               displayName: 'Full rebuild'              
             - task: PublishTestResults@2
+              condition: or(succeeded(), failed())   # publish either way
               inputs:
                 testResultsFiles: '**/test-results.xml'
                 artifactName: 'Unit Test results'
                 testRunTitle: 'Unit Test results'
             - task: PublishCodeCoverageResults@1
+              condition: or(succeeded(), failed())   # publish either way
               inputs:
                 codeCoverageTool: 'cobertura'
                 summaryFileLocation: '**/cobertura-coverage.xml'        
                 artifactName: 'Unit Test Coverage'
+            - script: |
+                node common/scripts/install-run-rush.js publish --include-all --pack --release-folder $(Build.ArtifactStagingDirectory)/tgz --publish   
+              displayName: 'Package as tgz'                  
         - job: fvt
           displayName: 'FV Tests'
           dependsOn: main
@@ -65,7 +71,7 @@ stages:
             - script: |
                 node common/scripts/install-run-rush.js install
                 node common/scripts/install-run-rush.js update
-                node common/scripts/install-run-rush.js rebuild
+                node common/scripts/install-run-rush.js rebuild  # replace this with pull from the artifacts staging
               displayName: 'Setup the node environment'                 
             - script: |
                 node common/scripts/install-run-rush.js start-fabric
@@ -79,55 +85,39 @@ stages:
               inputs:
                 testResultsFiles: '**/test-results.xml'
                 artifactName: 'FV Test results'
-                testRunTitle: 'FV Test results'  
-        # - job: pack_tgz
-        #   dependsOn: 
-        #     - main 
-        #     - fvt
-        #   steps:
-        #     - script: |
-        #         npm run tgzpack
-        #     - task: CopyFiles@2
-        #       inputs:
-        #         contents: '**/fabric-*/*.tgz'
-        #         targetFolder: $(Build.ArtifactStagingDirectory)/tgz
-        #     - task: PublishBuildArtifacts@1
-        #       inputs:
-        #         pathToPublish: $(Build.ArtifactStagingDirectory)/tgz
-        #         artifactName: MyBuildOutputs
-                        
-        # - job: apidocs
-        #   steps:
-        #     - task: NodeTool@0
-        #       inputs:
-        #         versionSpec: '8.x' 
-        #     - script: |
-        #         npm install
-        #         npm install -g gulp-cli
-        #       displayName: 'Setup the node environment'            
-        #     - script: |
-        #         gulp docs
-        #       displayName: 'Produce API docs'
-        #     - publish: $(System.DefaultWorkingDirectory)/docs/gen/
-        #       artifact: 'jsdocs'
-    # - stage: Publish_tag
-    #   condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/tags'))
-    #   jobs:
-    #     - job: update_version
-    #       steps:
-    #         - script: |
-    #             env | sort
-    #             echo "Update the version number"
-    #             echo "Make sure release notes are present"
-    #             echo "Make sure change history is present"
-    #     - job: npm_publish
-    #       steps:
-    #         - script: |
-    #             echo "Setup .npmrc"
-    #             echo "Use pipeline secret to login"
-    #             echo "publish"
-    #     - job: jsdoc_publish    
-    #       steps:
-    #         - script: |
-    #             echo "checkout docs branch"
-    #             echo "checking"
+                testRunTitle: 'FV Test results'                      
+        - job: apidocs
+          steps:
+            - task: NodeTool@0
+              inputs:
+                versionSpec: '8.x' 
+            - script: |
+                npm install
+                npm install -g gulp-cli
+              displayName: 'Setup the node environment'            
+            - script: |
+                gulp docs
+              displayName: 'Produce API docs'
+            - publish: $(System.DefaultWorkingDirectory)/docs/gen/
+              artifact: 'jsdocs'
+    - stage: Publish_tag
+      condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/tags'))
+      jobs:
+        - job: update_version
+          steps:
+            - script: |
+                env | sort
+                echo "Update the version number"
+                echo "Make sure release notes are present"
+                echo "Make sure change history is present"
+        - job: npm_publish
+          steps:
+            - script: |
+                echo "Setup .npmrc"
+                echo "Use pipeline secret to login"
+                echo "publish"
+        - job: jsdoc_publish    
+          steps:
+            - script: |
+                echo "checkout docs branch"
+                echo "checking"

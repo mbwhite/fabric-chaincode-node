@@ -1,6 +1,6 @@
 {
-  "name": "fabric-shim",
-  "version": "2.0.0-snapshot",
+  "name": "@ampretia/fabric-shim",
+  "version": "2.0.1-4",
   "tag": "unstable",
   "description": "A node.js implementation of Hyperledger Fabric chaincode shim, to allow endorsing peers and user-provided chaincodes to communicate with each other",
   "main": "index.js",
@@ -16,12 +16,15 @@
     "update:pbjs": "pbjs -t static-module -p google-protos -p protos $(find google-protos protos -name \"*.proto\" -type f) -o bundle.js",
     "update:pbts": "pbts -o bundle.d.ts bundle.js",
     "update": "npm run update:clean && npm run update:copy && npm run update:pbjs && npm run update:pbts",
-    "lint":"eslint ./lib",
+    "lint": "eslint ./lib",
     "build": "npm run lint & npm test 2>&1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyperledger/fabric-chaincode-node"
+    "url": "https://github.com/ampretia/fabric-chaincode-node"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "fabric-shim",
@@ -42,9 +45,9 @@
     "@grpc/proto-loader": "^0.5.1",
     "@types/node": "^8.9.4",
     "ajv": "^6.5.5",
-    "fabric-contract-api": "2.0.0-snapshot",
-    "fabric-shim-api": "2.0.0-snapshot",
-    "fs-extra": "^7.0.1",
+    "@ampretia/fabric-contract-api": "2.0.0",
+    "@ampretia/fabric-shim-api": "2.0.0",
+    "fs-extra": "8.1.0",
     "grpc": "^1.23.3",
     "reflect-metadata": "^0.1.12",
     "winston": "^3.2.1",
@@ -53,29 +56,29 @@
   },
   "devDependencies": {
     "cpx": "^1.5.0",
-    "mocha": "^5.2.0",
-    "nyc": "^14.1.1",
+    "mocha": "5.2.0",
+    "nyc": "14.1.1",
     "rimraf": "^3.0.0",
-    "sinon": "~7.4.2",
+    "sinon": "7.4.2",
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
     "chai-things": "^0.2.0",
-    "rewire": "~4.0.1",
+    "rewire": "4.0.1",
     "eslint": "4.0.0",
     "mockery": "^2.1.0",
     "mocha-multi-reporters": "^1.1.7"
   },
   "nyc": {
     "exclude": [
-        "coverage/**",
-        "test/**",
-        "gulpfile.js",
-        "bundle.js"
+      "coverage/**",
+      "test/**",
+      "gulpfile.js",
+      "bundle.js"
     ],
     "reporter": [
-        "text-summary",
-        "cobertura",
-        "html"
+      "text-summary",
+      "cobertura",
+      "html"
     ],
     "all": true,
     "check-coverage": true,
@@ -83,5 +86,5 @@
     "branches": 100,
     "functions": 100,
     "lines": 100
-   }
+  }
 }

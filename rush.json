@@ -326,16 +326,16 @@
         // },
         //
         {
-            "packageName": "fabric-shim-api",
+            "packageName": "@ampretia/fabric-shim-api",
             "projectFolder": "apis/fabric-shim-api",
             "reviewCategory": "apis",
-            "shouldPublish": true
+            "versionPolicyName": "fcn-master"
         },
         {
-            "packageName": "fabric-contract-api",
+            "packageName": "@ampretia/fabric-contract-api",
             "projectFolder": "apis/fabric-contract-api",
             "reviewCategory": "apis",
-            "shouldPublish": true
+            "versionPolicyName": "fcn-master"
         },
         {
             "packageName": "fabric-nodeenv",
@@ -348,16 +348,16 @@
             "reviewCategory": "docs"
         },
         {
-            "packageName": "fabric-shim",
+            "packageName": "@ampretia/fabric-shim",
             "projectFolder": "libraries/fabric-shim",
             "reviewCategory": "libraries",
-            "shouldPublish": true
+            "versionPolicyName": "fcn-master"
         },
         {
-            "packageName": "fabric-shim-crypto",
+            "packageName": "@ampretia/fabric-shim-crypto",
             "projectFolder": "libraries/fabric-shim-crypto",
             "reviewCategory": "libraries",
-            "shouldPublish": true
+            "versionPolicyName": "fcn-master"
         },
         {
             "packageName": "toolchain",
