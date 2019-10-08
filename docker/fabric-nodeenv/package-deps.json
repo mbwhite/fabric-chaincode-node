@@ -1,0 +1,11 @@
+{
+  "files": {
+    "docker/fabric-nodeenv/Dockerfile": "ee8cf607a58bfd73cf2f262f70b7b80e2d17915b",
+    "docker/fabric-nodeenv/build.sh": "09e6c8de77fb75290129fa93ae226218efbb50e5",
+    "docker/fabric-nodeenv/docker.js": "7c56d7aa4917ea54c46e4c5ecb4216e9f70e8661",
+    "docker/fabric-nodeenv/package-deps.json": "1a4d77c7ff4a3552596e6ad20299c645fecb6ebd",
+    "docker/fabric-nodeenv/package.json": "46df96f1542c124fdbce3eebb26fbbb8178a4c05",
+    "docker/fabric-nodeenv/start.sh": "e5258ff0b9db9c76c657c1ca25c0933c0bf29c3a"
+  },
+  "arguments": "gulp -f docker.js "
+}
