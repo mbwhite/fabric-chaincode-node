@@ -1,0 +1,17 @@
+{
+  "name": "fabric-shim-crypto",
+  "entries": [
+    {
+      "version": "2.0.0",
+      "tag": "fabric-shim-crypto_v2.0.0",
+      "date": "Thu, 07 Nov 2019 16:55:18 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "2.0.0"
+          }
+        ]
+      }
+    }
+  ]
+}
