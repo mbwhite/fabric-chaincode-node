@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "2.0.0-beta a",
+      "type": "prerelease",
+      "packageName": "fabric-contract-api"
+    }
+  ],
+  "packageName": "fabric-contract-api",
+  "email": "whitemat@uk.ibm.com"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "fabric-shim-api",
+  "entries": [
+    {
+      "version": "2.0.1",
+      "tag": "fabric-shim-api_v2.0.1",
+      "date": "Thu, 07 Nov 2019 16:42:50 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "2.0.0-beta a"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.0.0",
+      "tag": "fabric-shim-api_v2.0.0",
+      "date": "Thu, 07 Nov 2019 16:37:30 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "2.0.0-beta"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fabric-shim",
+  "entries": [
+    {
+      "version": "2.0.1",
+      "tag": "fabric-shim_v2.0.1",
+      "date": "Thu, 07 Nov 2019 16:42:50 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "2.0.0-beta a"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"fabric-contract-api\" from `2.0.0` to `2.0.1`"
+          },
+          {
+            "comment": "Updating dependency \"fabric-shim-api\" from `2.0.0` to `2.0.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.0.0",
+      "tag": "fabric-shim_v2.0.0",
+      "date": "Thu, 07 Nov 2019 16:37:30 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "2.0.0-beta"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"fabric-contract-api\" from `2.0.0-snapshot` to `2.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"fabric-shim-api\" from `2.0.0-snapshot` to `2.0.0`"
+          }
+        ]
+      }
+    }
+  ]
+}

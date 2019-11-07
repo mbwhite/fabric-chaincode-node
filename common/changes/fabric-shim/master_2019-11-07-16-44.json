@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "2.0.0-beta a",
+      "type": "none",
+      "packageName": "fabric-shim"
+    }
+  ],
+  "packageName": "fabric-shim",
+  "email": "whitemat@uk.ibm.com"
+}
