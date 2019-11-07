@@ -1,0 +1,30 @@
+{
+  "name": "fabric-shim",
+  "entries": [
+    {
+      "version": "2.0.0",
+      "tag": "fabric-shim_v2.0.0",
+      "date": "Thu, 07 Nov 2019 16:32:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "2.0.0-alpha 1"
+          }
+        ],
+        "none": [
+          {
+            "comment": "2.0.0-alpha 1"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"fabric-contract-api\" from `2.0.0-snapshot` to `2.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"fabric-shim-api\" from `2.0.0-snapshot` to `2.0.0`"
+          }
+        ]
+      }
+    }
+  ]
+}
