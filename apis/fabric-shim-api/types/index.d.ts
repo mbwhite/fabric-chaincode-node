@@ -6,6 +6,8 @@
 */
 declare module 'fabric-shim-api' {
 
+    
+
     interface Timestamp {
         seconds: number;
         nanos: number;
